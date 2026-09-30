@@ -1,0 +1,9 @@
+# Keep every text file LF in the repository and in checkouts: this is a JS/Markdown
+# package authored on Windows but published for every platform.
+* text=auto eol=lf
+
+# The hand-written browser bundle is generated-size (90KB, one file) and is part
+# of the published artifact, so it must never be treated as a binary blob.
+lib/client.js text diff=javascript
+
+*.tgz binary

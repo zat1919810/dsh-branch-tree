@@ -1,0 +1,7 @@
+# Distribution artifacts produced by `pnpm pack`
+dist/
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.log

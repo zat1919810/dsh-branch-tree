@@ -1,0 +1,11 @@
+# dsh-branch-tree bundle patch.
+#
+# A bundle package ships the loader rows it owns. Installing this package and
+# listing it in the profile's `dsh.profile.bundles` therefore needs no hand
+# editing of the profile's own patch: this file inserts the plugin's single row.
+#
+# The row names this same package, whose node half is a no-op and whose browser
+# half ships through exports["./client"] (see package.json `dsh.client`).
+- insert:
+    - id: ui-branch-tree
+      name: dsh-branch-tree

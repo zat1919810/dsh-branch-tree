@@ -1,0 +1,62 @@
+{
+  "name": "dsh-branch-tree",
+  "version": "1.0.0",
+  "description": "Conversation branching for DeepSeek Harness: fork any turn into an independent conversation, branch-and-ask, and navigate the branch tree",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "branch",
+    "fork",
+    "conversation-tree",
+    "turn-outline"
+  ],
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "test/family.test.mjs",
+    "tools/asar-extract.cjs",
+    "tools/decode-session.cjs",
+    "tools/session-tree.cjs"
+  ],
+  "scripts": {
+    "test": "node test/family.test.mjs",
+    "check": "node --check lib/client.js && node test/family.test.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "^0.2.0-rc.2 || ^0.1.0-rc.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
