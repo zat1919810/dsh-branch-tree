@@ -11,7 +11,8 @@
     "conversation-tree",
     "turn-outline"
   ],
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
+  "author": "zat",
   "type": "module",
   "main": "lib/index.js",
   "exports": {

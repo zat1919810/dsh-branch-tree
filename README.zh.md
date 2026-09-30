@@ -294,23 +294,18 @@ cp lib/client.js ~/.dsh/profiles/node_modules/dsh-branch-tree/lib/client.js
 
 欢迎提 issue 和 PR。
 
-## 许可：MIT + Commons Clause（可读可改可分发，但不许卖）
+## 许可：纯 MIT（真开源）
 
-`LICENSE` 的生效文本是 **MIT + Commons Clause License Condition v1.0**：
+`LICENSE` 是标准的 **MIT**，版权人 `zat`。可以用、读、改、再分发，**包括商业用途**，
+唯一条件是保留版权声明。
 
-- **可以**：使用、阅读、修改、再分发（含打包进你们自己的发行版）；
-- **不可以**：卖它 —— Commons Clause 明确把"向第三方收费提供本软件的功能（含按功能收费的托管/
-  咨询/支持）"排除在授权之外；
-- 想去掉限制变成**纯 MIT**：把 `LICENSE` 里 `"Commons Clause" License Condition v1.0` 那一节
-  到文件末尾整段删掉即可（上面的 MIT 正文本身是完整的）。
+有一点必须说明白：MIT 同时**授予了"卖"的权利**（原文里就写着 *"and/or sell copies of the
+Software"*）。如果你希望"谁也不许卖"，做法是在 MIT 正文后面追加
+[Commons Clause](https://commonsclause.com/) —— 但那是一个**取舍**：一旦加上"不许卖"，
+按 OSI 的《开源定义》它**就不再算开源**（定义要求不得限制使用领域），只能叫 source-available，
+部分公司白名单和发行版会因此拒绝。本项目选择**纯 MIT**，就是为了保持真开源、谁都能打包带走。
 
-**必须知道的一点**：这样**不算 OSI 意义的"开源"**。开源定义（OSD）禁止限制使用领域，而"不许卖"
-正是这种限制。所以这是一个刻意的取舍：
-- 想被称作开源、想进各类发行版/公司白名单 → 用**纯 MIT**；
-- 想让"谁也不许拿它收费"具备法律约束 → 保留 Commons Clause（属于 source-available）。
-- 折中方案（法律上不强制）：纯 MIT + 在 README 里写一句"请不要售卖"的请求。
-
-原作者/版权人那一行（`Copyright (c) 2026 <YOUR NAME OR HANDLE>`）**发布前必须替换成你自己的名字或 ID**。
+如果你后来改主意想加回 Commons Clause，改 `LICENSE` 一个文件即可（MIT 正文不用动，后面接一段条款）。
 
 DSH 本身是 MIT 许可，本项目是**非官方插件**，与其无隶属关系。
 

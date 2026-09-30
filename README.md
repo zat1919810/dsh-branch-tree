@@ -138,13 +138,16 @@ Issues and patches are welcome.
 
 ## License
 
-MIT **plus the Commons Clause License Condition v1.0** — free to use, read,
-modify and redistribute; **not free to sell**. See [LICENSE](LICENSE).
+**MIT** — see [LICENSE](LICENSE). Use it, read it, modify it, redistribute it,
+including commercially; the only condition is keeping the copyright notice.
 
-This is deliberately *not* OSI open source: the Open Source Definition forbids
-restricting fields of use, and "may not sell" is such a restriction. Removing the
-Commons Clause section from `LICENSE` leaves a plain MIT license if you would
-rather be OSI-approved.
+A consequence worth stating plainly: MIT also grants the right to **sell** the
+software (the license text says so: *"...and/or sell copies of the Software"*).
+If you would rather nobody could sell it, that right is removed by appending the
+[Commons Clause](https://commonsclause.com/) to the MIT text — a deliberate
+trade-off, because "may not sell" makes a license **non-open-source** under the
+OSI definition. This project chose plain MIT so it stays genuinely open and can
+be bundled by anyone.
 
 This is an unofficial plugin. DeepSeek Harness itself is MIT licensed and is not
 affiliated with this project.
